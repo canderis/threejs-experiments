@@ -1,0 +1,52 @@
+{
+	"name": "react-boilerplate",
+	"version": "2.0.0",
+	"description": "",
+	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"build": "vite build",
+		"preview": "vite build && vite preview",
+		"postinstall": "husky install",
+		"lint": "biome check ./src",
+		"lint:fix": "biome check --write ./src",
+		"validate": "npx lint-staged",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/canderis/react-boilerplate.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/canderis/react-boilerplate/issues"
+	},
+	"homepage": "https://github.com/canderis/react-boilerplate#readme",
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,html,css,json}": ["biome check --apply"]
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/lodash": "4.17.16",
+		"@types/node": "22.13.8",
+		"@types/react": "19.0.10",
+		"@types/react-dom": "19.0.4",
+		"@vitejs/plugin-react": "4.3.4",
+		"husky": "9.1.7",
+		"lint-staged": "15.4.3",
+		"tailwindcss": "4.0.9",
+		"typescript": "5.8.2",
+		"vite": "6.2.0"
+	},
+	"dependencies": {
+		"@tailwindcss/vite": "4.0.9",
+		"@tanstack/react-query": "5.66.11",
+		"lodash": "4.17.21",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"react-error-boundary": "5.0.0",
+		"react-router": "7.2.0",
+		"react-router-dom": "7.2.0"
+	}
+}
